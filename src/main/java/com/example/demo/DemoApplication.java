@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class DemoApplication implements CommandLineRunner {
 
     private static final String MY_TOPIC = "myTopic";
-    public static Logger logger = LoggerFactory.getLogger(DemoApplication.class);
+    public static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
     private final CountDownLatch latch = new CountDownLatch(3);
 
     @Autowired
